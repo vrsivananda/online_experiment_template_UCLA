@@ -123,7 +123,7 @@
           //Retrieve data from psiTurk and add to jsPsych data 
           jsPsych.data.addProperties(
             {
-              subject: psiturk.taskdata.get('workerId'),
+              workerId: psiturk.taskdata.get('workerId'),
               assignmentId: psiturk.taskdata.get('assignmentId'),
               hitId: psiturk.taskdata.get('hitId') 
             }
