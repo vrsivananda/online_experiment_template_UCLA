@@ -1,19 +1,24 @@
 function indices = returnIndicesIntersect(varargin)
 
-% This function returns the intersections of the indices of the array/
+% This function returns the intersection of the indices of the array/
 % cell array that matches the target values
 % Arguments are in the form of (array1, targetValue1, array2, targetValue2, etc.)
 % You can use as many argument pairs as you need and it will return the
 % intersection of all the indices
 
-% E.g. Assume that dataStructure.trial_type is a cell array of character
-% arrays, and dataStrucutre.response is an array of doubles.
-% If you do 
+% E.g. Assume that: 
+% (1) dataStructure.trial_type is a cell array of character arrays, and 
+% (2) dataStructure.response is an array of doubles.
+%
+% If you do: 
 % returnIndicesIntersect(dataStructure.trial_type, 'html-slider-response', ...
 %						 dataStructure.response, 100);
+%
 % It will return the intersection of:
 % (1) indices where trial_type == 'html-slider-response', and
 % (2) indices where response == 100
+% as one array.
+%
 % You can mix and match arrays and cell arrays and it would perform the
 % same way
 
