@@ -17,7 +17,7 @@
 — Change the compensation amount, the partial compensation amount, and the expected and maximum time the study should take<br/>
 
 ### (4) database_connect.php
-— Change <databaseLogin> and <databasePassword> to the database login username and password respectively (including the “<” and “>”)<br/>
+— Change <databaseLogin> and <databasePassword> to the database login username and password respectively (remove the “<” and “>”)<br/>
 
 ### (5) exp.html
 — Add in the plugins in the <head> of the html file<br/>
